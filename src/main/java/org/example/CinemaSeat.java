@@ -23,13 +23,13 @@ public class CinemaSeat {
         return occupied;
     }
 
-    public void occupy() {
+    public void occupySeat() {
         if (!occupied) {
             occupied = true;
         }
     }
 
-    public void freeUp() {
+    public void freeUpSeat() {
         if (occupied) {
             occupied = false;
         }

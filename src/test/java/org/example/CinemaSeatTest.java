@@ -2,17 +2,21 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class CinemaSeatTest {
 
     @Test
     public void testCinemaSeat() {
-        CinemaSeat cinemaSeat = new CinemaSeat(1, 2);
-        System.out.println(cinemaSeat.getNumber());
-        System.out.println(cinemaSeat.getRow());
-        System.out.println(cinemaSeat.isOccupied());
-        cinemaSeat.occupy();
-        System.out.println(cinemaSeat.isOccupied());
-        cinemaSeat.freeUp();
-        System.out.println(cinemaSeat.isOccupied());
+        // Given
+        CinemaSeat seat = new CinemaSeat(5, 3);
+
+        // When
+        int seatNumber = seat.getNumber();
+        int seatRow = seat.getRow();
+
+        // Then
+        assertEquals(5, seatNumber);
+        assertEquals(3, seatRow);
     }
 }
