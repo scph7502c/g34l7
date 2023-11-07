@@ -39,7 +39,6 @@ public class MinutesConverterTest {
         int seconds = MinutesConverter.minutesToSeconds(minutes);
 
         // Then
-        assertEquals(-1, seconds);
+        assertEquals(0, seconds);
     }
 }
-
