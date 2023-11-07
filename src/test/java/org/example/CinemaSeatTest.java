@@ -19,4 +19,16 @@ public class CinemaSeatTest {
         assertEquals(5, seatNumber);
         assertEquals(3, seatRow);
     }
+
+    @Test
+    public void testCinemaSeatOccupied() {
+        // Given
+        CinemaSeat seat = new CinemaSeat(5, 3);
+
+        // When
+        boolean isOccupied = seat.isOccupied();
+
+        // Then
+        assertEquals(false, isOccupied);
+    }
 }
