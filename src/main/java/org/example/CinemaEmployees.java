@@ -6,13 +6,13 @@ abstract class BaseEmployee {
     private String firstName;
     private String lastName;
     protected final int employmentYear;
-    protected final double defaultBaseSalary;
+    protected final double baseSalary;
 
-    public BaseEmployee(String firstName, String lastName, int employmentYear) {
+    public BaseEmployee(String firstName, String lastName, int employmentYear, double baseSalary) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.employmentYear = employmentYear;
-        this.defaultBaseSalary = 3000;
+        this.baseSalary = baseSalary;
     }
 
     public final int yearsOfService() {
